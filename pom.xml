@@ -430,15 +430,16 @@
         </repository>
     </distributionManagement>
     
-    <settings>
-        <servers>
-            <server>
-                <id>tomcat-development-server</id>
-                <username>root</username>
-                <password></password>
-            </server>
-        </servers>
-    </settings>
-    
     <url>demopetclinic</url>
 </project>
+
+    
+<settings>
+    <servers>
+        <server>
+            <id>tomcat-development-server</id>
+            <username>root</username>
+            <password></password>
+        </server>
+    </servers>
+</settings>
