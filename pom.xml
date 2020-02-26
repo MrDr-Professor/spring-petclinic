@@ -373,8 +373,8 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
+                    <url>http://192.168.56.106:8080/manager</url>
                     <server>tomcat-development-server</server>
-                    <port>9966</port>
                     <path>/petclinic</path>
                 </configuration>
             </plugin>
@@ -429,6 +429,16 @@
             <url>http://nexus:8081/nexus/content/repositories/releases</url>
         </repository>
     </distributionManagement>
-
+    
+    <settings>
+        <servers>
+            <server>
+                <id>tomcat-development-server</id>
+                <username>root</username>
+                <password></password>
+            </server>
+        </servers>
+    </settings>
+    
     <url>demopetclinic</url>
 </project>
