@@ -374,11 +374,6 @@
                 <version>2.2</version>
                 <configuration>
                     <url>http://192.168.56.106:8080/manager</url>
-                    <server>
-                        <id>tomcat</id>
-                        <username>root</username>
-                        <password></password>
-                    </server>
                     <path>/petclinic</path>
                 </configuration>
             </plugin>
