@@ -329,7 +329,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.3</version>
                 <configuration>
-                    <warName>petclinic</warName>
+                    <warName>spring-petclinic-1.0.0-SNAPSHOT</warName>
                 </configuration>
             </plugin>
             <plugin>
