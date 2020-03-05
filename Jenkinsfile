@@ -19,10 +19,7 @@ pipeline {
                 expression { env.BRANCH_NAME == 'master' }
             }
             steps {
-                configFileProvider([configFile(fileId: 'MySettings', variable: 'MAVEN_SETTINGS_XML')]) {
-                  sh 'mvn -U --batch-mode -s $MAVEN_SETTINGS_XML deploy -DskipTests'
-                }
-                //sh 'mvn deploy -DskipTests'
+                sh 'mvn deploy -DskipTests'
             }
         }
     }
