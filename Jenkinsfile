@@ -2,13 +2,6 @@
 
 pipeline {
     agent any
-
-    parameters {
-        choice(
-            choices: ['master'],
-            description: '',
-            name: 'BRANCH_NAME')
-    }
     
     stages {
         stage('Build') {
@@ -27,7 +20,7 @@ pipeline {
         //    }
             steps {
         //        sh 'mvn deploy -DskipTests'
-                echo params.BRANCH_NAME
+                echo env.BRANCH_NAME
             }
         }
     }
