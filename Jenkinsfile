@@ -15,12 +15,11 @@ pipeline {
             }
         }
         stage('Deploy') {
-        //    when {
-        //        expression { params.BRANCH_NAME == 'master' }
-        //    }
+            when {
+                expression { params.BRANCH_NAME == 'master' }
+            }
             steps {
-        //        sh 'mvn deploy -DskipTests'
-                echo env.BRANCH_NAME
+                sh 'mvn deploy -DskipTests'
             }
         }
     }
