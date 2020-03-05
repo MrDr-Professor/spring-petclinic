@@ -3,6 +3,13 @@
 pipeline {
     agent any
 
+    parameters {
+        choice(
+            choices: ['master'],
+            description: '',
+            name: 'BRANCH_NAME')
+    }
+    
     stages {
         stage('Build') {
             steps {
@@ -15,11 +22,12 @@ pipeline {
             }
         }
         stage('Deploy') {
-            when {
-                expression { BRANCH_NAME == 'master' }
-            }
+        //    when {
+        //        expression { params.BRANCH_NAME == 'master' }
+        //    }
             steps {
-                sh 'mvn deploy -DskipTests'
+        //        sh 'mvn deploy -DskipTests'
+                echo params.BRANCH_NAME
             }
         }
     }
