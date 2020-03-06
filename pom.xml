@@ -424,7 +424,7 @@
     <repositories>
         <repository>
             <id>maven-group</id>
-            <url>http://localhost:8081/repository/clinic/</url>
+            <url>http://localhost:8081/repository/joda/</url>
         </repository>
         <repository>
           <id>central</id>
