@@ -426,6 +426,12 @@
             <id>maven-group</id>
             <url>http://localhost:8081/repository/clinic/</url>
         </repository>
+        <repository>
+          <id>central</id>
+          <name>Maven Central</name>
+          <layout>default</layout>
+          <url>http://localhost:8081/repository/maven-central/</url>
+        </repository>
     </repositories>
 
     
